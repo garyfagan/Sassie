@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/garyfagan1987/baseCss.git"
+    "url": "git+https://github.com/garyfagan1987/sassie.git"
   },
   "author": "Gary Fagan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/garyfagan1987/baseCss/issues"
+    "url": "https://github.com/garyfagan1987/sassie/issues"
   },
-  "homepage": "https://github.com/garyfagan1987/baseCss#readme"
+  "homepage": "https://github.com/garyfagan1987/sassie#readme"
 }
