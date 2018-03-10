@@ -1,0 +1,19 @@
+{
+  "name": "sassie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garyfagan1987/baseCss.git"
+  },
+  "author": "Gary Fagan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garyfagan1987/baseCss/issues"
+  },
+  "homepage": "https://github.com/garyfagan1987/baseCss#readme"
+}
