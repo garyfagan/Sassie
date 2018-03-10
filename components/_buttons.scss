@@ -1,0 +1,30 @@
+button {
+    cursor: pointer;
+    font-family: map_get($button, font-family);
+}
+
+%btn {
+    border: none;
+    display: inline-block;
+    font-weight: 600;
+    min-width: 200px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.c-btn--full {
+    width: 100%;
+}
+
+.c-btn-primary {
+    @extend %btn;
+    background-color: map_get($button, primary-background-color);
+    color: map_get($button, primary-text-color);
+}
+
+.c-btn-secondary {
+    @extend %btn;
+    background-color: map_get($button, secondary-background-color);
+    color: map_get($button, secondary-text-color);
+}

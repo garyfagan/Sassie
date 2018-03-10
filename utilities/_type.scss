@@ -1,0 +1,17 @@
+@import "../config";
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 700;
+}
+
+h1, .u-h1 {
+    font-size: $h1-size;
+}
+
+h2, .u-h2 {
+    font-size: $h2-size;
+}
+
+h3, .u-h3 {
+    font-size: $h3-size;
+}

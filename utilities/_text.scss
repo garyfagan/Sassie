@@ -1,0 +1,22 @@
+@import "../config";
+
+// text align
+.u-text-center {
+    text-align: center;
+}
+
+// text transform
+.u-text-lowercase {
+    text-transform: lowercase;
+}
+
+.u-text-uppercase {
+    text-transform: uppercase;
+}
+
+// text colours
+@each $keyColor, $color in $text-colors {
+    .u-text-#{$keyColor} {
+        color: $color;
+    }
+}
