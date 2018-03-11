@@ -1,9 +1,0 @@
-$grid: (
-    gutter: 15px,
-    number: 12,
-    breakpoints: (
-        sm: "min-width: #{map-get($breakpoint, sm)}",
-        md: "min-width: #{map-get($breakpoint, md)}",
-        lg: "min-width: #{map-get($breakpoint, lg)}"
-    )
-);
