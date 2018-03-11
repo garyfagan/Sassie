@@ -1,6 +1,6 @@
 {
   "name": "sassie",
-  "version": "1.0.5",
+  "version": "1.0.4",
   "description": "",
   "sass": "sassie.scss",
   "main": "index.js",
