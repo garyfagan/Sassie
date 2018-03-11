@@ -3,10 +3,10 @@
 }
 
 body {
-    color: $body-font-color;
-    font-family: $body-font-family;
-    font-size: $body-font-size;
-    font-weight: $body-font-weight;
+    color: map-get($body-config, color);
+    font-family: map-get($body-config, font-family);
+    font-size: map-get($body-config, font-size);
+    font-weight: map-get($body-config, font-weight);
     margin: 0;
 }
 

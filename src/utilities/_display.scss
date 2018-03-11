@@ -1,5 +1,17 @@
 @import "../config";
 
-.u-display-block {
-    display: block;
+@each $keyType, $type in map-get($display-config, types) {
+  .u-display-xs-#{$keyType} {
+    display: #{$keyType};
+  }
+}
+
+@each $keyBreakpoint, $breakpoint in map-get($display-config, breakpoints) {
+  @media only screen and (min-width:#{$breakpoint}) {
+    @each $keyType, $type in map-get($display-config, types) {
+      .u-display-#{$keyBreakpoint}-#{$keyType} {
+        display: #{$keyType};
+      }
+    }
+  }
 }

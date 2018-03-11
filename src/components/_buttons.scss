@@ -1,6 +1,6 @@
 button {
     cursor: pointer;
-    font-family: map_get($button, font-family);
+    font-family: map_get($button-config, font-family);
 }
 
 %btn {
@@ -17,10 +17,10 @@ button {
     width: 100%;
 }
 
-@each $keyType, $type in $button-types {
+@each $keyType, $type in map_get($button-config, types) {
     .c-btn-#{$keyType} {
         @extend %btn;
-        background-color: map-deep-get($button-types, $keyType, background-color);
-        color: map-deep-get($button-types, $keyType, text-color);
+        background-color: nth($type, 1);
+        color: nth($type, 2);
     }
 }

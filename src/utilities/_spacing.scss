@@ -1,22 +1,47 @@
 @import "../config";
 
-@each $keyType, $type in map-get($spacing, types) {
+@each $keyProperty, $property in map-get($spacing-config, properties) {
 
-    .u-#{$keyType} {
-        @each $keySize, $size in map-get($spacing, sizes) {
+  .u-#{$keyProperty}-xs {
+    @each $keySize, $size in map-get($spacing-config, sizes) {
+      &-#{$keySize} {
+        #{$keyProperty}: map-deep-get($spacing-config, "sizes", $keySize);
+      }
+    }
+  }
+
+  @each $keySide, $side in map-get($spacing-config, sides) {
+    .u-#{$keyProperty}-#{$keySide}-xs {
+      @each $keySize, $size in map-get($spacing-config, sizes) {
+        &-#{$keySize} {
+          #{$keyProperty}-#{$keySide}: map-deep-get($spacing-config, "sizes", $keySize);
+        }
+      }
+    }
+  }
+}
+
+@each $keyBreakpoint, $breakpoint in map-get($spacing-config, breakpoints) {
+  @media only screen and (min-width:#{$breakpoint}) {
+    @each $keyProperty, $property in map-get($spacing-config, properties) {
+
+      .u-#{$keyProperty}-#{$keyBreakpoint} {
+        @each $keySize, $size in map-get($spacing-config, sizes) {
+          &-#{$keySize} {
+            #{$keyProperty}: map-deep-get($spacing-config, "sizes", $keySize);
+          }
+        }
+      }
+
+      @each $keySide, $side in map-get($spacing-config, sides) {
+        .u-#{$keyProperty}-#{$keySide}-#{$keyBreakpoint} {
+          @each $keySize, $size in map-get($spacing-config, sizes) {
             &-#{$keySize} {
-                #{$keyType}: map-deep-get($spacing, "sizes", $keySize);
+              #{$keyProperty}-#{$keySide}: map-deep-get($spacing-config, "sizes", $keySize);
             }
+          }
         }
+      }
     }
-
-    @each $keyPosition, $position in map-get($spacing, positions) {
-        .u-#{$keyType}-#{$keyPosition} {
-            @each $keySize, $size in map-get($spacing, sizes) {
-                &-#{$keySize} {
-                    #{$keyType}-#{$keyPosition}: map-deep-get($spacing, "sizes", $keySize);
-                }
-            }
-        }
-    }
+  }
 }

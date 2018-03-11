@@ -15,7 +15,7 @@
 }
 
 // text colours
-@each $keyColor, $color in $text-colors {
+@each $keyColor, $color in $text-config {
     .u-text-#{$keyColor} {
         color: $color;
     }

@@ -3,28 +3,28 @@
 .u-row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: - map-get($grid, gutter);
-    margin-right: - map-get($grid, gutter);
+    margin-left: - map-get($grid-config, gutter);
+    margin-right: - map-get($grid-config, gutter);
 
     & [class^="u-col-"] {
-        padding-left: map-get($grid, gutter);
-        padding-right: map-get($grid, gutter);
+        padding-left: map-get($grid-config, gutter);
+        padding-right: map-get($grid-config, gutter);
         margin-bottom: 15px;
     }
 }
 
-@for $i from 1 through map-get($grid, number) {
+@for $i from 1 through map-get($grid-config, number) {
     .u-col-xs-#{$i} {
-        $percentage: ($i / map-get($grid, number)) * 100 + '%';
+        $percentage: ($i / map-get($grid-config, number)) * 100 + '%';
         flex: 0 0 #{$percentage};
     }
 }
 
-@each $keyBreakpoint, $breakpoint in map-get($grid, breakpoints) {
-    @media only screen and ($breakpoint) {
-        @for $i from 1 through map-get($grid, number) {
+@each $keyBreakpoint, $breakpoint in map-get($grid-config, breakpoints) {
+    @media only screen and (min-width:#{$breakpoint}) {
+        @for $i from 1 through map-get($grid-config, number) {
             .u-col-#{$keyBreakpoint}-#{$i} {
-                $percentage: ($i / map-get($grid, number)) * 100 + '%';
+                $percentage: ($i / map-get($grid-config, number)) * 100 + '%';
                 flex: 0 0 #{$percentage};
             }
         }
