@@ -1,6 +1,8 @@
+$font-primary: 'Open Sans', sans-serif;
+
 $body-config: (
   color: #2D3E50,
-  font-family: "'Open Sans', sans-serif",
+  font-family: $font-primary,
   font-size: 16px,
   font-weight: 400
 );
