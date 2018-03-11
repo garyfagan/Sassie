@@ -1,0 +1,11 @@
+.u-container {
+    margin: 0 auto;
+    overflow: hidden;
+    width: map-get($breakpoint, md);
+}
+
+@media (max-width: map-get($breakpoint, md)) {
+    .u-container {
+        width: calc(100% - 20px);
+    }
+}

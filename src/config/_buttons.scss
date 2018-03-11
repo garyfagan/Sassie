@@ -1,0 +1,14 @@
+$button: (
+    font-family: $body-font-family
+);
+
+$button-types: (
+    primary: (
+        background-color: #E84C3D,
+        text-color: #FFF
+    ),
+    secondary: (
+        background-color: #2D3E50,
+        text-color: #FFF
+    )
+);

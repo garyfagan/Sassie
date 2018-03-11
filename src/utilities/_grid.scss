@@ -1,0 +1,32 @@
+@import "../config";
+
+.u-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: - map-get($grid, gutter);
+    margin-right: - map-get($grid, gutter);
+
+    & [class^="u-col-"] {
+        padding-left: map-get($grid, gutter);
+        padding-right: map-get($grid, gutter);
+        margin-bottom: 15px;
+    }
+}
+
+@for $i from 1 through map-get($grid, number) {
+    .u-col-xs-#{$i} {
+        $percentage: ($i / map-get($grid, number)) * 100 + '%';
+        flex: 0 0 #{$percentage};
+    }
+}
+
+@each $keyBreakpoint, $breakpoint in map-get($grid, breakpoints) {
+    @media only screen and ($breakpoint) {
+        @for $i from 1 through map-get($grid, number) {
+            .u-col-#{$keyBreakpoint}-#{$i} {
+                $percentage: ($i / map-get($grid, number)) * 100 + '%';
+                flex: 0 0 #{$percentage};
+            }
+        }
+    }
+}

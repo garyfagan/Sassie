@@ -1,0 +1,21 @@
+@import "../config";
+
+.u-fade-hover:hover .u-fade--in {
+    opacity: 1;
+}
+
+.u-fade-hover:hover .u-fade--out {
+    opacity: 0;
+}
+
+.u-fade {
+    transition: opacity 1000ms;
+
+    &--in {
+        opacity: 0;
+    }
+
+    &--out {
+        opacity: 1;
+    }
+}

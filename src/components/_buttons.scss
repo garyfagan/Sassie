@@ -1,0 +1,26 @@
+button {
+    cursor: pointer;
+    font-family: map_get($button, font-family);
+}
+
+%btn {
+    border: none;
+    display: inline-block;
+    font-weight: 600;
+    min-width: 200px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.c-btn--full {
+    width: 100%;
+}
+
+@each $keyType, $type in $button-types {
+    .c-btn-#{$keyType} {
+        @extend %btn;
+        background-color: map-deep-get($button-types, $keyType, background-color);
+        color: map-deep-get($button-types, $keyType, text-color);
+    }
+}
