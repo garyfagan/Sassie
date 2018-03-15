@@ -725,7 +725,7 @@ h6, .u-h6 {
 
 body {
   color: #2D3E50;
-  font-family: "'Open Sans', sans-serif";
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   margin: 0; }
@@ -745,7 +745,7 @@ a {
 
 button {
   cursor: pointer;
-  font-family: "'Open Sans', sans-serif"; }
+  font-family: "Open Sans", sans-serif; }
 
 .c-btn-primary, .c-btn-secondary {
   border: none;

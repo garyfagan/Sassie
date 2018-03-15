@@ -1,0 +1,3 @@
+@function calc-percentage($arg1, $arg2) {
+  @return ($arg1 / $arg2) * 100%;
+}

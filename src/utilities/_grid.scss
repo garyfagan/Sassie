@@ -13,19 +13,17 @@
     }
 }
 
-@for $i from 1 through map-get($grid-config, number) {
-    .u-col-xs-#{$i} {
-        $percentage: ($i / map-get($grid-config, number)) * 100 + '%';
-        flex: 0 0 #{$percentage};
+@for $column-number from 1 through map-get($grid-config, number) {
+    .u-col-xs-#{$column-number} {
+        @include flex-column($column-number);
     }
 }
 
 @each $keyBreakpoint, $breakpoint in map-get($grid-config, breakpoints) {
     @media only screen and (min-width:#{$breakpoint}) {
-        @for $i from 1 through map-get($grid-config, number) {
-            .u-col-#{$keyBreakpoint}-#{$i} {
-                $percentage: ($i / map-get($grid-config, number)) * 100 + '%';
-                flex: 0 0 #{$percentage};
+        @for $column-number from 1 through map-get($grid-config, number) {
+            .u-col-#{$keyBreakpoint}-#{$column-number} {
+                @include flex-column($column-number);
             }
         }
     }
