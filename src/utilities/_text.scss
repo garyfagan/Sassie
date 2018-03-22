@@ -5,7 +5,19 @@
     text-align: center;
 }
 
+.u-text-left {
+    text-align: left;
+}
+
+.u-text-right {
+    text-align: right;
+}
+
 // text transform
+.u-text-capitalize {
+    text-transform: capitalize;
+}
+
 .u-text-lowercase {
     text-transform: lowercase;
 }
@@ -14,9 +26,24 @@
     text-transform: uppercase;
 }
 
+// text decoration
+.u-text-decoration-underline {
+    text-decoration: underline;
+}
+
+.u-text-decoration-none {
+    text-decoration: none;
+}
+
 // text colours
-@each $keyColor, $color in $text-config {
-    .u-text-#{$keyColor} {
-        color: $color;
-    }
+.u-text-primary {
+    color: $text-primary;
+}
+
+.u-text-secondary {
+    color: $text-secondary;
+}
+
+.u-text-white {
+    color: $text-white;
 }

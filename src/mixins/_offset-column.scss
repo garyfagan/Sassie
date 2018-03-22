@@ -1,0 +1,3 @@
+@mixin offset-column($column-number) {
+  margin-left: calc-percentage($column-number, map-get($grid-config, number));
+}

@@ -1,0 +1,42 @@
+// font
+$font-primary: 'Open Sans', sans-serif;
+
+//body
+$body-color: #2D3E50;
+$body-font-family: $font-primary;
+$body-font-size: 16px;
+$body-font-weight: 400;
+
+// text
+$text-primary: #E84C3D;
+$text-secondary: #D9DADC;
+$text-white: #FFF;
+
+// breakpoint
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1200px;
+
+// grid
+$column-gutter: 15px;
+$column-number: 12;
+
+// spacing
+$spacing-1: 5px;
+$spacing-2: 10px;
+$spacing-3: 15px;
+$spacing-4: 20px;
+
+// heading
+$heading-1: 3em;
+$heading-2: 2em;
+$heading-3: 1.2em;
+$heading-4: 1.2em;
+$heading-5: 1.2em;
+$heading-6: 1.2em;
+
+// buttons
+$button-primary-background: #E84C3D;
+$button-primary-color: #FFF;
+$button-secondary-background: #2D3E50;
+$button-secondary-color: #FFF;

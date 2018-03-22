@@ -17,6 +17,9 @@
     .u-col-xs-#{$column-number} {
         @include flex-column($column-number);
     }
+    .u-col-xs-offset-#{$column-number} {
+        @include offset-column($column-number);
+    }
 }
 
 @each $keyBreakpoint, $breakpoint in map-get($grid-config, breakpoints) {
@@ -24,6 +27,9 @@
         @for $column-number from 1 through map-get($grid-config, number) {
             .u-col-#{$keyBreakpoint}-#{$column-number} {
                 @include flex-column($column-number);
+            }
+            .u-col-#{$keyBreakpoint}-offset-#{$column-number} {
+                @include offset-column($column-number);
             }
         }
     }

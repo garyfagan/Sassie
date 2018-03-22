@@ -1,7 +1,7 @@
 $button-config: (
-    font-family: map-get($body-config, font-family),
-    types: (
-        primary: #E84C3D #FFF,
-        secondary: #2D3E50 #FFF,
-    )
+        font-family: $body-font-family,
+        types: (
+                primary: $button-primary-background $button-primary-color,
+                secondary: $button-secondary-background $button-secondary-color,
+        )
 );
