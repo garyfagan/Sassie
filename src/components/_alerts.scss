@@ -1,0 +1,10 @@
+%alert {
+  padding: map_get($alert-config, padding);
+}
+
+@each $keyType, $type in map_get($alert-config, types) {
+  .c-alert-#{$keyType} {
+    @extend %alert;
+    background-color: nth($type, 1);
+  }
+}
