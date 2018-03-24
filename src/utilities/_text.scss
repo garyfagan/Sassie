@@ -36,14 +36,8 @@
 }
 
 // text colours
-.u-text-primary {
-    color: $text-primary;
-}
-
-.u-text-secondary {
-    color: $text-secondary;
-}
-
-.u-text-white {
-    color: $text-white;
+@each $keyType, $type in map_get($text-config, types) {
+    .u-text-#{$keyType} {
+        color: nth($type, 1);
+    }
 }
