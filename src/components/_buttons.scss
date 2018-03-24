@@ -1,16 +1,16 @@
 button {
     cursor: pointer;
-    font-family: map_get($button-config, font-family);
 }
 
 %btn {
     border: none;
+    border-radius: map_get($button-config, border-radius);
     display: inline-block;
-    font-weight: 600;
+    font-family: map_get($button-config, font-family);
+    font-size: map_get($button-config, font-size);
     min-width: 200px;
     padding: 10px;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .c-btn--full {
@@ -22,5 +22,9 @@ button {
         @extend %btn;
         background-color: nth($type, 1);
         color: nth($type, 2);
+
+        &:hover {
+            background-color: darken(nth($type, 1), 10%);
+        }
     }
 }

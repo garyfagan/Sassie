@@ -1,7 +1,13 @@
 $button-config: (
-        font-family: $body-font-family,
+        border-radius: $button-border-radius,
+        font-family: $button-font-family,
+        font-size: $button-font-size,
         types: (
                 primary: $button-primary-background $button-primary-color,
                 secondary: $button-secondary-background $button-secondary-color,
+                success: $button-success-background $button-success-color,
+                info: $button-info-background $button-info-color,
+                warning: $button-warning-background $button-warning-color,
+                danger: $button-danger-background $button-danger-color,
         )
 );
