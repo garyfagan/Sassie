@@ -5,19 +5,19 @@
   display: none;
 }
 
-@media only screen and (min-width: 0) and (max-width: map-deep-get($breakpoint-config, types, sm)) {
+@media only screen and (min-width: 0) and (max-width: map-deep-get($breakpoint-config, types, sm) - 1) {
   .u-hidden-xs {
     display: none;
   }
 }
 
-@media only screen and (min-width: map-deep-get($breakpoint-config, types, sm)) and (max-width: map-deep-get($breakpoint-config, types, md)) {
+@media only screen and (min-width: map-deep-get($breakpoint-config, types, sm)) and (max-width: map-deep-get($breakpoint-config, types, md) - 1) {
   .u-hidden-sm {
     display: none;
   }
 }
 
-@media only screen and (min-width: map-deep-get($breakpoint-config, types, md)) and (max-width: map-deep-get($breakpoint-config, types, lg)) {
+@media only screen and (min-width: map-deep-get($breakpoint-config, types, md)) and (max-width: map-deep-get($breakpoint-config, types, lg) - 1) {
   .u-hidden-md {
     display: none;
   }
@@ -29,19 +29,19 @@
   }
 }
 
-@media only screen and (min-width: 0) and (max-width: map-deep-get($breakpoint-config, types, sm)) {
+@media only screen and (min-width: 0) and (max-width: map-deep-get($breakpoint-config, types, sm) - 1) {
   .u-visible-xs {
     display: block;
   }
 }
 
-@media only screen and (min-width: map-deep-get($breakpoint-config, types, sm)) and (max-width: map-deep-get($breakpoint-config, types, md)) {
+@media only screen and (min-width: map-deep-get($breakpoint-config, types, sm)) and (max-width: map-deep-get($breakpoint-config, types, md) - 1) {
   .u-visible-sm {
     display: block;
   }
 }
 
-@media only screen and (min-width: map-deep-get($breakpoint-config, types, md)) and (max-width: map-deep-get($breakpoint-config, types, lg)) {
+@media only screen and (min-width: map-deep-get($breakpoint-config, types, md)) and (max-width: map-deep-get($breakpoint-config, types, lg) - 1) {
   .u-visible-md {
     display: block;
   }
