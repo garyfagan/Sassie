@@ -3,12 +3,13 @@ button {
 }
 
 %btn {
-    border: none;
+    border-style: solid;
+    border-width: map_get($button-config, border-width);
     border-radius: map_get($button-config, border-radius);
     display: inline-block;
     font-family: map_get($button-config, font-family);
     font-size: map_get($button-config, font-size);
-    min-width: 200px;
+    min-width: map_get($button-config, min-width);
     padding: 10px;
     text-align: center;
 }
@@ -21,6 +22,7 @@ button {
     .c-btn-#{$keyType} {
         @extend %btn;
         background-color: nth($type, 1);
+        border-color: nth($type, 3);
         color: nth($type, 2);
 
         &:hover {
