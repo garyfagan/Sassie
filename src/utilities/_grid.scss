@@ -9,7 +9,6 @@
     & [class^="u-col-"] {
         padding-left: map-get($grid-config, gutter);
         padding-right: map-get($grid-config, gutter);
-        margin-bottom: 15px;
     }
 }
 
