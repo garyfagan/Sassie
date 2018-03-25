@@ -3,7 +3,7 @@ $font-primary: 'Open Sans', sans-serif;
 
 // colors
 $color-primary: #337AB7;
-$color-secondary: #337AB7;
+$color-default: #337AB7;
 $color-success: #5CB85C;
 $color-info: #5BC0DE;
 $color-warning: #F0AD4E;
@@ -12,8 +12,6 @@ $color-white: #FFF;
 
 // alert
 $alert-padding: 20px;
-$alert-primary-background: $color-primary;
-$alert-secondary-background: $color-secondary;
 $alert-success-background: $color-success;
 $alert-info-background: $color-info;
 $alert-warning-background: $color-warning;
@@ -27,7 +25,6 @@ $body-font-weight: 400;
 
 // text
 $text-primary: $color-primary;
-$text-secondary: $color-secondary;
 $text-success: $color-success;
 $text-info: $color-info;
 $text-warning: $color-warning;
@@ -59,7 +56,6 @@ $heading-6: 1.2em;
 
 // background colors
 $background-primary: $color-primary;
-$background-secondary: $color-secondary;
 $background-success: $color-success;
 $background-info: $color-info;
 $background-warning: $color-warning;
@@ -67,23 +63,31 @@ $background-danger: $color-danger;
 
 // buttons
 $button-border-radius: 2px;
+$button-border-width: 1px;
 $button-font-family: $body-font-family;
 $button-font-size: $body-font-size;
+$button-min-width: 150px;
 
 $button-primary-background: $color-primary;
 $button-primary-color: $text-white;
+$button-primary-border-color: darken($color-primary, 5%);
 
-$button-secondary-background: $color-secondary;
-$button-secondary-color: $text-white;
+$button-default-background: $color-default;
+$button-default-color: $text-white;
+$button-default-border-color: darken($color-primary, 5%);
 
 $button-success-background: $color-success;
 $button-success-color: $text-white;
+$button-success-border-color: darken($color-success, 5%);
 
 $button-info-background: $color-info;
 $button-info-color: $text-white;
+$button-info-border-color: darken($color-info, 5%);
 
 $button-warning-background: $color-warning;
 $button-warning-color: $text-white;
+$button-warning-border-color: darken($color-warning, 5%);
 
 $button-danger-background: $color-danger;
 $button-danger-color: $text-white;
+$button-danger-border-color: darken($color-danger, 5%);
