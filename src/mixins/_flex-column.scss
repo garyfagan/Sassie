@@ -1,3 +1,4 @@
 @mixin flex-column($column-number) {
   flex: 0 0 calc-percentage($column-number, map-get($grid-config, number));
+  max-width: calc-percentage($column-number, map-get($grid-config, number));
 }
