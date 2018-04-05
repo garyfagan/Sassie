@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 @each $keySize, $size in map-get($heading-config, sizes) {
-    #{$keySize}, .u-#{$keySize} {
+    .u-#{$keySize} {
         font-size: $size;
     }
 }

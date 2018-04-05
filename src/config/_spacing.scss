@@ -1,6 +1,6 @@
 $spacing-config: (
         properties: (margin, padding),
         sides: (top, right, bottom, left),
-        sizes: (0: 0px, 1: $spacing-1, 2: $spacing-2, 3: $spacing-3, 4: $spacing-4),
+        sizes: (0: 0, 1: $spacing-1, 2: $spacing-2, 3: $spacing-3, 4: $spacing-4),
         breakpoints: map-get($breakpoint-config, types)
 );

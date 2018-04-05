@@ -1,0 +1,12 @@
+{
+  "ignore": [
+    "box-sizing",
+    "regex-selectors",
+    "unqualified-attributes",
+    "universal-selector"
+  ],
+  "warnings": [
+  ],
+  "errors": [
+  ]
+}

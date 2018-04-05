@@ -32,3 +32,6 @@ npm install sassie
 * u-h4
 * u-h5
 * u-h6
+
+### CSS Linting
+node_modules/.bin/csslint dist/sassie.css

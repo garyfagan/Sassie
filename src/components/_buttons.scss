@@ -3,9 +3,9 @@ button {
 }
 
 %btn {
+    border-radius: map_get($button-config, border-radius);
     border-style: solid;
     border-width: map_get($button-config, border-width);
-    border-radius: map_get($button-config, border-radius);
     display: inline-block;
     font-family: map_get($button-config, font-family);
     font-size: map_get($button-config, font-size);
