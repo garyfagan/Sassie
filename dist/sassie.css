@@ -971,6 +971,8 @@ a {
 .u-container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1024px; }
   .u-container:before, .u-container:after {
     content: " ";
@@ -980,7 +982,7 @@ a {
 
 @media only screen and (max-width: 1024px) {
   .u-container {
-    width: calc(100% - 20px); } }
+    width: 100%; } }
 
 .c-alert-success, .c-alert-info, .c-alert-warning, .c-alert-danger {
   padding: 20px; }

@@ -1,6 +1,8 @@
 .u-container {
     margin-left: auto;
     margin-right: auto;
+    padding-left: map-get($grid-config, gutter);
+    padding-right: map-get($grid-config, gutter);
     width: map-deep-get($breakpoint-config, types, md);
 
     &:before, &:after {
@@ -15,6 +17,6 @@
 
 @media only screen and (max-width: map-deep-get($breakpoint-config, types, md)) {
     .u-container {
-        width: calc(100% - 20px);
+        width: 100%;
     }
 }
