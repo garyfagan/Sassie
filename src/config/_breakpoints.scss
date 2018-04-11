@@ -1,3 +1,7 @@
 $breakpoint-config: (
-        types: (sm: $breakpoint-sm, md: $breakpoint-md, lg: $breakpoint-lg)
+  'types': (
+    'sm': $breakpoint-sm,
+    'md': $breakpoint-md,
+    'lg': $breakpoint-lg
+  )
 );

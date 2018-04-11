@@ -1,9 +1,9 @@
 $background-config: (
-        types: (
-                primary: $background-primary,
-                success: $background-success,
-                info: $background-info,
-                warning: $background-warning,
-                danger: $background-danger
-        )
+  'types': (
+    'primary': $background-primary,
+    'success': $background-success,
+    'info': $background-info,
+    'warning': $background-warning,
+    'danger': $background-danger
+  )
 );

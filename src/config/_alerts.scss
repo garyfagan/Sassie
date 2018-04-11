@@ -1,9 +1,9 @@
 $alert-config: (
-        padding: $alert-padding,
-        types: (
-                success: $alert-success-background,
-                info: $alert-info-background,
-                warning: $alert-warning-background,
-                danger: $alert-danger-background,
-        )
+  'padding': $alert-padding,
+  'types': (
+    'success': $alert-success-background,
+    'info': $alert-info-background,
+    'warning': $alert-warning-background,
+    'danger': $alert-danger-background,
+  )
 );

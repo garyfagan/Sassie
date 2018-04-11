@@ -1,6 +1,6 @@
 // background colours
-@each $keyType, $type in map_get($background-config, types) {
-  .u-background-#{$keyType} {
+@each $key-type, $type in map-get($background-config, types) {
+  .u-background-#{$key-type} {
     background-color: nth($type, 1);
   }
 }

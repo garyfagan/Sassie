@@ -20,13 +20,15 @@
   "homepage": "https://github.com/garyfagan1987/sassie#readme",
   "devDependencies": {
     "autoprefixer": "^8.2.0",
-    "csslint": "^1.0.5",
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.1",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-shell": "^0.6.5",
+    "gulp-sourcemaps": "^2.6.4",
+    "sass-lint": "^1.12.1"
   },
   "dependencies": {},
+  "sasslintConfig": "./.sasslintrc",
   "browserslist": [
     "last 2 versions"
   ]

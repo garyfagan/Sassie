@@ -1,32 +1,32 @@
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 %btn {
-    border-radius: map_get($button-config, border-radius);
-    border-style: solid;
-    border-width: map_get($button-config, border-width);
-    display: inline-block;
-    font-family: map_get($button-config, font-family);
-    font-size: map_get($button-config, font-size);
-    min-width: map_get($button-config, min-width);
-    padding: 10px;
-    text-align: center;
+  border-radius: map-get($button-config, border-radius);
+  border-style: solid;
+  border-width: map-get($button-config, border-width);
+  display: inline-block;
+  font-family: map-get($button-config, font-family);
+  font-size: map-get($button-config, font-size);
+  min-width: map-get($button-config, min-width);
+  padding: 10px;
+  text-align: center;
 }
 
 .c-btn--full {
-    width: 100%;
+  width: 100%;
 }
 
-@each $keyType, $type in map_get($button-config, types) {
-    .c-btn-#{$keyType} {
-        @extend %btn;
-        background-color: nth($type, 1);
-        border-color: nth($type, 3);
-        color: nth($type, 2);
+@each $key-type, $type in map-get($button-config, types) {
+  .c-btn-#{$key-type} {
+    @extend %btn;
+    background-color: nth($type, 1);
+    border-color: nth($type, 3);
+    color: nth($type, 2);
 
-        &:hover {
-            background-color: darken(nth($type, 1), 10%);
-        }
+    &:hover {
+      background-color: darken(nth($type, 1), 10%);
     }
+  }
 }

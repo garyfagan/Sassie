@@ -1,10 +1,10 @@
 $text-config: (
-        types: (
-                primary: $text-primary,
-                success: $text-success,
-                info: $text-info,
-                warning: $text-warning,
-                danger: $text-danger,
-                white: $text-white,
-        )
+  'types': (
+    'primary': $text-primary,
+    'success': $text-success,
+    'info': $text-info,
+    'warning': $text-warning,
+    'danger': $text-danger,
+    'white': $text-white,
+  )
 );

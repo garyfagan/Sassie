@@ -1,4 +1,4 @@
 $display-config: (
-        types: (none, inline, inline-block, block, table, table-cell, table-row, flex, inline-flex),
-        breakpoints: map-get($breakpoint-config, types)
+  'types': (none, inline, inline-block, block, table, table-cell, table-row, flex, inline-flex),
+  'breakpoints': map-get($breakpoint-config, types)
 );

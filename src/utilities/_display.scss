@@ -1,16 +1,16 @@
-@import "../config";
+@import '../config';
 
-@each $keyType, $type in map-get($display-config, types) {
-  .u-display-xs-#{$keyType} {
-    display: #{$keyType};
+@each $key-type, $type in map-get($display-config, types) {
+  .u-display-xs-#{$key-type} {
+    display: #{$key-type};
   }
 }
 
-@each $keyBreakpoint, $breakpoint in map-get($display-config, breakpoints) {
-  @media only screen and (min-width:#{$breakpoint}) {
-    @each $keyType, $type in map-get($display-config, types) {
-      .u-display-#{$keyBreakpoint}-#{$keyType} {
-        display: #{$keyType};
+@each $key-breakpoint, $breakpoint in map-get($display-config, breakpoints) {
+  @media only screen and (min-width: #{$breakpoint}) {
+    @each $key-type, $type in map-get($display-config, types) {
+      .u-display-#{$key-breakpoint}-#{$key-type} {
+        display: #{$key-type};
       }
     }
   }

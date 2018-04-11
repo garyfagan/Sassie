@@ -1,11 +1,17 @@
-@import "../config";
+@import '../config';
 
-h1, h2, h3, h4, h5, h6, strong {
-    font-weight: 700;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 700;
 }
 
-@each $keySize, $size in map-get($heading-config, sizes) {
-    .u-#{$keySize} {
-        font-size: $size;
-    }
+@each $key-size, $size in map-get($heading-config, sizes) {
+  .u-#{$key-size} {
+    font-size: $size;
+  }
 }

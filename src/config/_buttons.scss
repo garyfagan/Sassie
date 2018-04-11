@@ -1,15 +1,15 @@
 $button-config: (
-        border-radius: $button-border-radius,
-        border-width: $button-border-width,
-        font-family: $button-font-family,
-        font-size: $button-font-size,
-        min-width: $button-min-width,
-        types: (
-                primary: $button-primary-background $button-primary-color $button-primary-border-color,
-                default: $button-default-background $button-default-color $button-default-border-color,
-                success: $button-success-background $button-success-color $button-success-border-color,
-                info: $button-info-background $button-info-color $button-info-border-color,
-                warning: $button-warning-background $button-warning-color $button-warning-border-color,
-                danger: $button-danger-background $button-danger-color $button-danger-border-color,
-        )
+  'border-radius': $button-border-radius,
+  'border-width': $button-border-width,
+  'font-family': $button-font-family,
+  'font-size': $button-font-size,
+  'min-width': $button-min-width,
+  'types': (
+    'primary': $button-primary-background $button-primary-color $button-primary-border-color,
+    'default': $button-default-background $button-default-color $button-default-border-color,
+    'success': $button-success-background $button-success-color $button-success-border-color,
+    'info': $button-info-background $button-info-color $button-info-border-color,
+    'warning': $button-warning-background $button-warning-color $button-warning-border-color,
+    'danger': $button-danger-background $button-danger-color $button-danger-border-color,
+  )
 );

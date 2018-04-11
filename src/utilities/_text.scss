@@ -1,43 +1,43 @@
-@import "../config";
+@import '../config';
 
 // text align
 .u-text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .u-text-left {
-    text-align: left;
+  text-align: left;
 }
 
 .u-text-right {
-    text-align: right;
+  text-align: right;
 }
 
 // text transform
 .u-text-capitalize {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .u-text-lowercase {
-    text-transform: lowercase;
+  text-transform: lowercase;
 }
 
 .u-text-uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 // text decoration
 .u-text-decoration-underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .u-text-decoration-none {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 // text colours
-@each $keyType, $type in map_get($text-config, types) {
-    .u-text-#{$keyType} {
-        color: nth($type, 1);
-    }
+@each $key-type, $type in map-get($text-config, types) {
+  .u-text-#{$key-type} {
+    color: nth($type, 1);
+  }
 }

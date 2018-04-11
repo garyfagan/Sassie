@@ -2,13 +2,13 @@
 $font-primary: 'Open Sans', sans-serif;
 
 // colors
-$color-primary: #337AB7;
-$color-default: #337AB7;
-$color-success: #5CB85C;
-$color-info: #5BC0DE;
-$color-warning: #F0AD4E;
-$color-danger: #D9534F;
-$color-white: #FFF;
+$color-primary: #337ab7;
+$color-default: #337ab7;
+$color-success: #5cb85c;
+$color-info: #5bc0de;
+$color-warning: #f0ad4e;
+$color-danger: #d9534f;
+$color-white: #fff;
 
 // alert
 $alert-padding: 20px;
@@ -18,10 +18,11 @@ $alert-warning-background: $color-warning;
 $alert-danger-background: $color-danger;
 
 //body
-$body-color: #2D3E50;
+$body-color: #2d3e50;
 $body-font-family: $font-primary;
 $body-font-size: 16px;
 $body-font-weight: 400;
+$body-link-color: #2d3e50;
 
 // text
 $text-primary: $color-primary;

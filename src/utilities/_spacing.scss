@@ -1,43 +1,43 @@
-@import "../config";
+@import '../config';
 
-@each $keyProperty, $property in map-get($spacing-config, properties) {
+@each $key-property, $property in map-get($spacing-config, properties) {
 
-  .u-#{$keyProperty}-xs {
-    @each $keySize, $size in map-get($spacing-config, sizes) {
-      &-#{$keySize} {
-        #{$keyProperty}: map-deep-get($spacing-config, "sizes", $keySize);
+  .u-#{$key-property}-xs {
+    @each $key-size, $size in map-get($spacing-config, sizes) {
+      &-#{$key-size} {
+        #{$key-property}: map-deep-get($spacing-config, 'sizes', $key-size);
       }
     }
   }
 
-  @each $keySide, $side in map-get($spacing-config, sides) {
-    .u-#{$keyProperty}-#{$keySide}-xs {
-      @each $keySize, $size in map-get($spacing-config, sizes) {
-        &-#{$keySize} {
-          #{$keyProperty}-#{$keySide}: map-deep-get($spacing-config, "sizes", $keySize);
+  @each $key-side, $side in map-get($spacing-config, sides) {
+    .u-#{$key-property}-#{$key-side}-xs {
+      @each $key-size, $size in map-get($spacing-config, sizes) {
+        &-#{$key-size} {
+          #{$key-property}-#{$key-side}: map-deep-get($spacing-config, 'sizes', $key-size);
         }
       }
     }
   }
 }
 
-@each $keyBreakpoint, $breakpoint in map-get($spacing-config, breakpoints) {
-  @media only screen and (min-width:#{$breakpoint}) {
-    @each $keyProperty, $property in map-get($spacing-config, properties) {
+@each $key-breakpoint, $breakpoint in map-get($spacing-config, breakpoints) {
+  @media only screen and (min-width: #{$breakpoint}) {
+    @each $key-property, $property in map-get($spacing-config, properties) {
 
-      .u-#{$keyProperty}-#{$keyBreakpoint} {
-        @each $keySize, $size in map-get($spacing-config, sizes) {
-          &-#{$keySize} {
-            #{$keyProperty}: map-deep-get($spacing-config, "sizes", $keySize);
+      .u-#{$key-property}-#{$key-breakpoint} {
+        @each $key-size, $size in map-get($spacing-config, sizes) {
+          &-#{$key-size} {
+            #{$key-property}: map-deep-get($spacing-config, 'sizes', $key-size);
           }
         }
       }
 
-      @each $keySide, $side in map-get($spacing-config, sides) {
-        .u-#{$keyProperty}-#{$keySide}-#{$keyBreakpoint} {
-          @each $keySize, $size in map-get($spacing-config, sizes) {
-            &-#{$keySize} {
-              #{$keyProperty}-#{$keySide}: map-deep-get($spacing-config, "sizes", $keySize);
+      @each $key-side, $side in map-get($spacing-config, sides) {
+        .u-#{$key-property}-#{$key-side}-#{$key-breakpoint} {
+          @each $key-size, $size in map-get($spacing-config, sizes) {
+            &-#{$key-size} {
+              #{$key-property}-#{$key-side}: map-deep-get($spacing-config, 'sizes', $key-size);
             }
           }
         }

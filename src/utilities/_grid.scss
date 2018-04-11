@@ -1,37 +1,39 @@
-@import "../config";
+@import '../config';
 
 .u-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: - map-get($grid-config, gutter);
-    margin-right: - map-get($grid-config, gutter);
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: - map-get($grid-config, gutter);
+  margin-right: - map-get($grid-config, gutter);
 
-    & [class^="u-col-"] {
-        box-sizing: border-box;
-        padding-left: map-get($grid-config, gutter);
-        padding-right: map-get($grid-config, gutter);
-        width: 100%;
-    }
+  & [class^='u-col-'] {
+    box-sizing: border-box;
+    padding-left: map-get($grid-config, gutter);
+    padding-right: map-get($grid-config, gutter);
+    width: 100%;
+  }
 }
 
 @for $column-number from 1 through map-get($grid-config, number) {
-    .u-col-xs-#{$column-number} {
-        @include flex-column($column-number);
-    }
-    .u-col-xs-offset-#{$column-number} {
-        @include offset-column($column-number);
-    }
+  .u-col-xs-#{$column-number} {
+    @include flex-column($column-number);
+  }
+
+  .u-col-xs-offset-#{$column-number} {
+    @include offset-column($column-number);
+  }
 }
 
-@each $keyBreakpoint, $breakpoint in map-get($grid-config, breakpoints) {
-    @media only screen and (min-width:#{$breakpoint}) {
-        @for $column-number from 1 through map-get($grid-config, number) {
-            .u-col-#{$keyBreakpoint}-#{$column-number} {
-                @include flex-column($column-number);
-            }
-            .u-col-#{$keyBreakpoint}-offset-#{$column-number} {
-                @include offset-column($column-number);
-            }
-        }
+@each $key-breakpoint, $breakpoint in map-get($grid-config, breakpoints) {
+  @media only screen and (min-width: #{$breakpoint}) {
+    @for $column-number from 1 through map-get($grid-config, number) {
+      .u-col-#{$key-breakpoint}-#{$column-number} {
+        @include flex-column($column-number);
+      }
+
+      .u-col-#{$key-breakpoint}-offset-#{$column-number} {
+        @include offset-column($column-number);
+      }
     }
+  }
 }

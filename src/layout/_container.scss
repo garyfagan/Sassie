@@ -1,22 +1,23 @@
 .u-container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: map-get($grid-config, gutter);
-    padding-right: map-get($grid-config, gutter);
-    width: map-deep-get($breakpoint-config, types, md);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: map-get($grid-config, gutter);
+  padding-right: map-get($grid-config, gutter);
+  width: map-deep-get($breakpoint-config, types, md);
 
-    &:before, &:after {
-        content: " ";
-        display: table;
-    }
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
 
-    &:after {
-        clear: both;
-    }
+  &::after {
+    clear: both;
+  }
 }
 
 @media only screen and (max-width: map-deep-get($breakpoint-config, types, md)) {
-    .u-container {
-        width: 100%;
-    }
+  .u-container {
+    width: 100%;
+  }
 }
