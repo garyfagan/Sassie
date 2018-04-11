@@ -11,3 +11,12 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
   gulp.watch('./src/**/*.scss', ['sass']);
 });
+
+gulp.task('auto-prefix', function () {
+  var postcss      = require('gulp-postcss');
+  var autoprefixer = require('autoprefixer');
+
+  return gulp.src('./dist/*.css')
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(gulp.dest('./dist'));
+});
