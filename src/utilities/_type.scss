@@ -11,7 +11,17 @@ strong {
 }
 
 @each $key-size, $size in map-get($heading-config, sizes) {
-  .u-#{$key-size} {
+  .u-#{$key-size}-xs {
     font-size: $size;
+  }
+}
+
+@each $key-breakpoint, $breakpoint in map-get($spacing-config, breakpoints) {
+  @media only screen and (min-width: #{$breakpoint}) {
+    @each $key-size, $size in map-get($heading-config, sizes) {
+      .u-#{$key-size}-#{$key-breakpoint} {
+        font-size: $size;
+      }
+    }
   }
 }
