@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: $font-size; // rem * 16
+}
+
 body {
   color: $body-color;
   font-family: $body-font-family;

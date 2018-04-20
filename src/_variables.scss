@@ -1,5 +1,6 @@
 // font
 $font-primary: 'Open Sans', sans-serif;
+$font-size: 10px;
 
 // colors
 $color-primary: #337ab7;
@@ -20,8 +21,8 @@ $alert-danger-background: $color-danger;
 //body
 $body-color: #2d3e50;
 $body-font-family: $font-primary;
-$body-font-size: 16px;
 $body-font-weight: 400;
+$body-font-size: 1.6rem;
 $body-link-color: #2d3e50;
 
 // text
@@ -42,18 +43,18 @@ $column-gutter: 15px;
 $column-number: 12;
 
 // spacing
-$spacing-1: 5px;
-$spacing-2: 10px;
-$spacing-3: 15px;
-$spacing-4: 20px;
+$spacing-1: .5rem;
+$spacing-2: 1rem;
+$spacing-3: 1.5rem;
+$spacing-4: 2rem;
 
 // heading
-$heading-1: 2.2em;
-$heading-2: 2em;
-$heading-3: 1.8em;
-$heading-4: 1.6em;
-$heading-5: 1.4em;
-$heading-6: 1.2em;
+$heading-1: 2.8rem;
+$heading-2: 2.6rem;
+$heading-3: 2.4rem;
+$heading-4: 2.2rem;
+$heading-5: 2rem;
+$heading-6: 1.8rem;
 
 // background colors
 $background-primary: $color-primary;
